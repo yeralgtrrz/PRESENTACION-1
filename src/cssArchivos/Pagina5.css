@@ -1,0 +1,60 @@
+.contenedor-Principal-Pagina5 {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(318deg, #3d0c33, #0b003d, #410028, #072916, #002152);
+  background-size: 1000% 1000%;
+  animation: Coolgradient 30s linear infinite;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@keyframes Coolgradient { 
+  0% { background-position: 5% 0%; }
+  50% { background-position: 96% 100%; }
+  100% { background-position: 5% 0%; }
+}
+.pagina5-titulo {
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0)); 
+  width: 100%;
+  position: sticky;
+  padding: 20px;
+}
+.contenedor-Principal-Pagina5 h3{
+border-top: 1px dashed #808080;
+}
+.contenedor-columnas {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;                     
+  width: 100%;
+  max-width: 1200px;             
+  margin: 0 auto;
+}
+.columna1, .columna2, .columna3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  flex: 1;                     
+  display: flex;
+  flex-direction: column;      
+  gap: 20px;                   
+}
+.cartilla {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 0px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 12px -4px rgba(0, 0, 0, 0.7); 
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.cartilla:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.8);
+}
+.cartilla img {
+  width: 100%;
+  height: auto;
+}

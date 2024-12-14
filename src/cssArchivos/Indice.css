@@ -1,0 +1,138 @@
+.contenedor-Principal-Indice {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(318deg, #3d0c33, #0b003d, #410028, #072916, #002152);
+    background-size: 1000% 1000%;
+    animation: Coolgradient 50s linear infinite;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes Coolgradient {
+    0% { background-position: 5% 0%; }
+    50% { background-position: 96% 100%; }
+    100% { background-position: 5% 0%; }
+}
+.portada {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-contenedor {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 0px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.col1 {
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.col2 {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px #00000080;
+}
+
+.subtitulo h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Contenido */
+.contenido p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.6;
+}
+.evento h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.evento p {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+.artistas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.artista {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    width: 92%;
+    margin-left: 4%;
+    margin-bottom: 1%;
+    align-items: center;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+
+}
+.contenedor-Principal-Indice h3
+{
+    border-top: 1px dashed #808080;
+}
+.artista:hover {
+    transform: scale(1.05);
+  }
+.Artistas-Destacados
+{
+    border-top: 1px dashed #808080;
+    width: 100%;
+}
+.contenido-destacado
+{
+    width: 90%;
+    
+}
+.artista h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.artista p {
+    font-size: 1rem;
+    color: #ddd;
+}
+.titulo-de-arte {
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0)); /* Desvanecimiento de gris oscuro */
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    padding: 20px;
+  }  

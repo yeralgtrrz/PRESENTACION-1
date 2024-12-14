@@ -1,0 +1,54 @@
+.contenedor-Principal-Pagina1 {
+    width: 100%;
+    background: linear-gradient(318deg, #3d0c33, #0b003d, #410028, #072916, #002152);
+    background-size: 1000% 1000%;
+    animation: Coolgradient 41s linear infinite;
+    overflow: hidden;
+    text-align: center;
+}
+@keyframes Coolgradient { 
+    0% { background-position: 5% 0%; }
+    50% { background-position: 96% 100%; }
+    100% { background-position: 5% 0%; }
+}
+.titulo-pagina1
+{
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0)); 
+    width: 100%;
+    position: sticky;
+    padding: 20px;
+}
+.contenedor-Principal-Pagina1 h3
+{
+    border-top: 1px dashed #808080;
+}
+.videos-container-pagina1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 60px;
+}
+.video-contenido-pagina1 {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #0c4870;
+    color: gold;
+
+}
+.video-contenido-pagina1 img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+.video-contenido-pagina1:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s, box-shadow 2s;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.8);
+}
+.contenedor-Principal-Pagina1 p
+{
+    border: 1px dashed #808080;
+}

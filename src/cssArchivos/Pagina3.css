@@ -1,0 +1,44 @@
+.contenedor-Principal-Pagina3 {
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(318deg, #3d0c33, #0b003d, #410028, #072916, #002152);
+    background-size: 1000% 1000%;
+    animation: Coolgradient 41s linear infinite;
+}
+@keyframes Coolgradient {
+    0% { background-position: 5% 0%; }
+    50% { background-position: 96% 100%; }
+    100% { background-position: 5% 0%; }
+}
+.contenedor-Principal-Pagina3 h3
+{
+    border-top: 1px dashed #c4c4c4;
+}
+.titulo-pagina3 {
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0)); 
+    width: 100%;
+    position: sticky;
+    padding: 20px;
+}
+.contenedor-columnas-pagina3
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "columna1 columna2 columna2";
+}
+.contenedor-pagina3-columna1 {
+    grid-area: columna1;
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+.contenedor-pagina3-columna2 {
+    grid-area: columna2;
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+}

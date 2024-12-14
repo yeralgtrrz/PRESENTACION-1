@@ -1,0 +1,57 @@
+.contenedor-Principal-Pagina4 {
+    width: 100%;
+    background: linear-gradient(318deg, #3d0c33, #0b003d, #410028, #072916, #002152);
+    background-size: 1000% 1000%;
+    animation: Coolgradient 30s linear infinite;
+    overflow: hidden;
+}
+@keyframes Coolgradient { 
+  0% { background-position: 5% 0%; }
+  50% { background-position: 96% 100%; }
+  100% { background-position: 5% 0%; }
+}
+.carrusel-contenedor {
+  margin-left: 2.5%;
+  width: 95%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 8px 12px -4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+.carousel-item {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
+}
+.carousel-item.active {
+  opacity: 1;
+}
+.carousel-item img {
+  width: 100%;
+}
+.titulo-de-arte-p4 {
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0)); /* Desvanecimiento de gris oscuro */
+  text-align: center;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  align-items: center;
+}  
+.pagina4-columnas-contenidor2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;             
+  margin: 0 auto;
+}
+.pagina4-columna1-contenido2,.pagina4-columna2-contenido2, .pagina4-columna3-contenido2
+{
+  flex: 1;                  
+  display: flex;
+  flex-direction: column;   
+  gap: 20px;                
+}
+.contenedor-Principal-Pagina4 h3
+{
+  border-top: 1px dashed #808080;
+  width: auto;
+}

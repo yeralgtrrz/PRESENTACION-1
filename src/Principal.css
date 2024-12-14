@@ -1,0 +1,170 @@
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.active {
+  font-weight: bold;
+  color: #007BFF;
+}
+.menu.open {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 78px;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.menu li {
+  text-align: center;
+  padding: 10px 0;
+}
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  header
+  {
+    justify-content: space-between;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .footer {
+    padding: 2%;
+  }
+}
+main {
+  flex: 1;
+  margin: 0px;
+  padding: 0px;
+  padding:0px;
+  width: calc(100vw - 17px);  /* Ajusta para eliminar el desbordamiento */
+}
+.Principal {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna (header arriba, main abajo) */
+    width: 100%;
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    background-color: #242424;
+    color: bisque;
+  }
+  header {
+    display: flex;
+    flex-direction: row; /* Coloca el título y la navegación en orden vertical */
+    align-items: center;
+    
+    background-color: #333;
+    padding: 1rem;
+  }
+  header h1 {
+    position: relative;
+    padding-right: 5%;
+    font-size: 1rem;
+    color: rgb(130, 220, 255);
+  }
+  header .logo {
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 1rem;
+  }
+  nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Coloca los elementos en fila */
+    gap: 1rem; /* Espaciado entre enlaces */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre los elementos */
+    transition: color 0.3s ease, transform 0.2s ease, box-shadow 0.8s ease; /* Transiciones suaves */
+}
+
+nav ul li:hover {
+  color: #007BFF;
+  transform: scale(1.2);
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.8); /* Sombra con desplazamiento y desenfoque */
+  border-radius: 10px;
+}
+
+
+  nav a {
+    text-decoration: none;
+  }
+  .footer {
+    background-color: #343a40;
+    color: white;
+    padding: 4%;
+    text-align: left;
+    overflow: hidden;
+  }
+.texto-footer
+{
+  justify-content: center;
+  text-align: center;
+  max-width: 300px;
+}
+  .footer-enlace li {
+    margin-bottom: 5px;
+    list-style: none;
+    color: bisque;
+  }
+  .footer-logo {
+    border-radius: 100%;
+      max-width: 40px;
+  }  
+  .footer-seccion2-iconos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+  }
+  .icon {
+    font-size: 40px; /* Aumenta el tamaño inicial */
+    width: 40px;  /* Ajusta el tamaño para que coincida */
+    height: 40px;  /* Para mantener la forma circular */
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    text-align: center;  /* Asegura que el icono esté centrado */
+    line-height: 40px;  /* Centra el icono dentro del contenedor */
+  }
+  
+  .icon:hover {
+    color: #ff0000;
+    transition-duration: 1s;
+    transform: scale(2); /* Escala el icono */
+    border-radius: 50%;  /* Forma circular */
+    box-shadow: 0px 0px 10px red;  /* Sombras alrededor */
+  }
+  .obalado {
+    border-radius: 30px;
+    height: 25px;
+    width: 40px;
+    background-color: #ff000028;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Aumenta el valor del desplazamiento vertical */
+  }
+  .footer-ultimo {
+    border-top: 1px solid #555;
+    text-align: center;
+  }
+  .footer-seccion1-3
+  {
+    max-width: 300px;
+  }
+  
